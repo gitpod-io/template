@@ -3,7 +3,9 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - init: npm install
+  - name: Install Dependencies and Start Dev Server
+    init: npm install
+    command: npm run dev
 
 vscode:
   extensions:
